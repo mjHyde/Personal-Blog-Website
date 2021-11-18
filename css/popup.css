@@ -1,0 +1,116 @@
+
+/* this is to have a basic layout of all the main styles for the pop-up */
+/* but allow each page to have it more in it's "style" */
+/* might not be practical but its mostly just for practice */
+
+
+.subscribe a {
+    color: black;
+    text-decoration: none;
+}
+
+/*the sub box isn't "open" */
+.sub-info-contain {
+    display: none;
+}
+
+/* this should "open" box */
+.sub-info-contain:target {
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* to grey out area around pop up */
+.sub-info-contain .border-box::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,.55);
+    content: "";
+    cursor: default;
+}
+
+.subscribe-info {
+    background-color: #5a6a6b;
+    width: 300px;
+    height: auto;
+    z-index: 20;
+    position: absolute; 
+    top: 29vh;
+    left: 39vw;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.sub-info-contain .closes {
+    position: relative;
+    display: block;
+    bottom: 16px;
+    left: 16px;
+}
+
+.sub-info-contain .closes::after {
+    cursor: pointer;
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+}
+
+.input {
+    color: black;
+    border-bottom: solid 1px black;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.checks {
+    padding: 2px 0;
+    border-bottom: solid 1px black;
+    width: 225px;
+    color: black;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+label {
+    font-size: 1.3em;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+input {
+    margin: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.submit-button {
+    margin: 15px 0 5px 0;
+}
+
+.submit-button a {
+    color: black;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+}

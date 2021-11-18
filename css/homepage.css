@@ -1,0 +1,320 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #5a6a6b;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px auto 250px 60px 60px;
+    grid-gap: 15px;
+    min-width: 325px;
+}
+
+header {
+    grid-row: 1;
+    font-size: 350%;
+    border-bottom: 20px double #ccd8d9;
+    padding-left: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-container {
+    background-color: #000;
+    color:#60ffea;
+    grid-row: 2;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*FUTURE TODO: want to apply target psuedo element to allow nav click to scroll down*/
+li:hover {
+    transform: scale(150%);
+}
+
+.intro-container {
+    grid-row: 3;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+figcaption {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 90%;
+    border-radius: 24px;    
+    margin: 0 auto;
+}
+
+h3 {
+    color:#F9E071;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-bottom: solid;
+    background-color: #5a6a6b;
+}
+
+.intro {
+    width: 94%;
+    margin: 0 auto;
+}
+
+p {
+    padding: 10px 10px 5px 10px;
+    margin: 0;
+}
+
+.intro-paragraph {
+    background-color: #F9E071;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+blockquote {
+    color: #60ffea;
+    font-size: 20px;
+}
+
+.blog-container{
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: #ccd8d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    font-size: 35px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    color:#5a6a6b;
+}
+
+/* TODO 
+maybe make some sort of transformatino when you :hover
+over summer or winter it changes to icon? */
+.summer {
+    margin-bottom: 3px;
+}
+
+.winter {
+    margin-top: 3px;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+}
+
+/* TODO: have icon spin when targeted/clicked */
+/*.title:hover .icon:hover {
+    opacity:0; filter:alpha(opacity=0);
+    float: left; 
+    transform: rotate(360deg);
+    transition: linear 1.5s ease-in-out 0s;
+}*/
+
+a {
+    text-decoration: none;
+    color: #60ffea;
+}
+
+h2 {
+    color: #5a6a6b;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    grid-row: 5;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social {
+    flex-direction: column;
+    font-size: 24px;
+    text-decoration: underline #ccd8d9;
+}
+.subscribe-container {
+    grid-row: 6;
+}
+
+.subscribe {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #F9E071;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* FUTURE TODO: will use back button for when the page is long enough to use it*/
+.back {
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 50%;
+    background-color: #ccd8d9;
+    display: none;
+}
+
+/* unique styles for pop up */
+.sub-info-contain {
+    display: none;
+}
+
+.subscribe-info {
+    background-color: #5a6a6b;
+    border: 2px solid #F9E071;
+}
+
+.info {
+    border-bottom: solid 1px #60ffea;
+}
+
+.checks {
+    border-bottom: solid 1px #60ffea;
+}
+
+label {
+    font-size: 1.3em;
+}
+
+input {
+    margin: 5px;
+}
+
+@media(min-width: 520px) {
+    .container {
+        grid-template-rows: 100px 80px auto auto 60px 60px;
+    }
+
+    .nav-container li {
+        font-size: 2em;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 17px auto;
+        padding: 0;
+    }
+
+    .card {
+        font-size: 72px;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+        transform: scale(2);
+        position: relative;
+        left: 58px;
+        top: 40px;
+    }
+
+    .subscribe {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        left: initial;
+    }
+}
+@media(min-width:950px) {
+    .container {
+        grid-template-rows: 200px 100px auto auto 60px 60px;
+    }
+
+    header {
+        font-size: 600%;
+    }
+
+    .nav-container li {
+        font-size: 3.5em;
+    }
+
+    figure {
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    figcaption {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 5em;
+    }
+
+    .intro-paragraph {
+        font-size: 2.5em;
+    }
+
+    .quote {
+        font-size: 2em;
+        margin: 0 150px;
+    }
+
+    .blog-container {
+        flex-direction: row;
+    }
+
+    .card {
+        position: relative;
+        right: 30px;
+    }
+
+    .post {
+        width: 50%;
+        margin: 10px;
+        height: auto;
+        font-size: 60px;
+        border-radius: 32px;
+    }
+
+    .icon {
+        transform: scale(1.3);
+        left: 0;
+        top: 0;
+    }
+
+    .social {
+        font-size: 3em;
+    }
+}

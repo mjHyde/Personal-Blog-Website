@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/winter.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+
+    <title>Winter Blog</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>Winter Adventures</header>
+        <div class="icon">
+            <div class="snowflake">❄️</div>
+        </div>
+        <!-- author's info -->
+         <div class="blog-container"> 
+             <p class="blog-one">
+                 During the Winter I love snowboarding more 
+                 than anything so I try to spend as much time up 
+                 in the mountains as I can afford. I have boarded 
+                 at a few mountians and some of my favorite are:
+             </p>
+             <div class="list">
+                <ol type="1">
+                    <li class="copper mountain">Copper</li>
+                    <li class="wolf-creek mountain">Wolf Creek</li>
+                    <li class="park-city mountain">Park City</li>
+                    <li class="vail mountain">Vail</li>
+                </ol>
+            </div>
+             <!-- images album -->
+            <div class="picture">
+                <img class="snow" src="img/Snow2.JPG" alt="Snow boarding" >
+                <img class="snow" src="img/snow3.JPG" alt="Snow boarding" >
+                <img class="snow" src="img/snow4.JPG" alt="Snow boarding" >
+                <img class="snow" src="img/snow5.JPG" alt="Snow boarding" >
+            </div>
+            <p class="blog-two">
+                Snowboarding is not an easy or cheap sport to pick up. You
+                have to be dedicated enough to keep getting up after each 
+                fall and persevere through the fear of trying something so 
+                unique. Being in the mountains with the snow is an expereince 
+                I hope everyone can enjoy at least once. 
+            </p>
+         </div>
+        <!-- social sharing -->
+
+            <!-- footer -->
+            <footer class="footer">
+                <ul class="social-list">
+                    <li class="social" ><a href="Facebook.com">Facebook</a></li>
+                    <li class="social"><a href="Twitter.com">Twitter</a></li>
+                    <li class="social"><a href="linkedin.com">LinkedIn</a></li>
+                </ul>
+            </footer>
+            <div class="subscribe-container">
+                <button type="button" class="subscribe"><a href="#hidden">Subscribe</a></button>
+            </div>
+
+            <!-- subscribe form -->
+        <form action="" method="" class="sub-info-contain" id="hidden">
+            <!-- input used to send data that the form will be sent to -->
+            <!-- FUTURE TODO: will need to get help geeting a value for all the blank attribute to properly send info to my email -->
+            <input type="hidden" name="" value="morganh@outlook.com">
+            <!-- div to make grey out area around pop up -->
+            <div class="border-box">
+                <fieldset class="subscribe-info">
+                    <a href="#" class="closes"></a>
+                    <p class="info">Input Info To Apply</p>
+                    <!-- the name of the id will connect it to the for attribute -->
+                    <label for="name">Name</label> 
+                        <input type="text" name="name" id="name">
+                    <label for="email">Email: </label> 
+                        <input type="email" name="email" id="email">
+
+                    <!-- checkbox options -->
+                    <p class="checks">Check all that apply:</p>
+                    <!-- TODO: how to put words beside the checkbox -->
+                    <label for="notifications">
+                        <input type="checkbox" value="subscribe" name="subscribe" id="subscribe"> Subscribe to email notifications
+                    </label>
+                    <label for="hikes">
+                        <input type="checkbox" value="hikes" name="hikes" id="hikes"> Updates about hikes
+                    </label>
+                    <label for="resorts">
+                        <input type="checkbox" value="resorts" name="resorts" id="resorts"> Updates about Resorts
+                    </label>
+                    <label for="fun">
+                        <input type="checkbox" value="fun" name="options" id="fun" checked> Do you love kittens/puppies
+                    </label>
+                    <button class="submit-button" type="submit"><a href="">Submit</a></button>
+                </fieldset>
+            </div>
+        </form>
+            <!--FUTURE TODO: need to make SVG for back button -->
+            <!-- FUTURE TODO: for when page is longer -->
+            <div class='back-button-container'>
+                <button type="button" class="back"><a href="">Return</a></button>
+            </div>
+            
+
+    </div>
+</body>
+</html>

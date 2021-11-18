@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- TODO: need to write alt for accessbility reading -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+    <link href="./css/homepage.css" rel="stylesheet">
+    <title>Morgan's Blog</title>
+</head>
+<body>
+    <div class="container">
+        <header>Morgan's Blog</header>
+        <nav class="nav-container">
+            <ul>
+                <!-- FUTURE TODO: have buttons move to location needed or next page -->
+                <li class="about">About</li>
+                <li class="contact">Contact</li>
+                <li class="extra stuff">Extra</li>
+            </ul>
+        </nav>
+        <!-- picture with a short explanation to help with navagation-->
+        <div class="intro-container">
+            <figure>
+                <img class="main-img" alt="Photo of Blogger" src="img/Snow2.JPG">
+                <figcaption>My first trip into the Backcountry World!</figcaption>
+            </figure>
+            <div class="intro">
+                <h3>Adventure waits for no one</h3>
+                <p class='intro-paragraph'>Hello and welcome to my Blog! I love adventure regardless of the 
+                time of year. There is always something going on and new things to 
+                try. Wether it be during the heat of summer or the cold of winter 
+                you will probably find myself in the mountains or on a rock taking in 
+                the beautiful views that nature provides. Oone of my favorite
+                quotes that 
+                </p>
+            </div>
+            <blockquote>
+                <p class="quote">"Only when everything goes wrong is when adventure starts"</p>
+                <figcaption> - Yvon Chouinard</figcaption>
+            </blockquote> 
+            
+        </div>
+        <!-- Blog Post Cards -->
+        <div class="blog-container">
+            <div class="summer post">
+                <a href="summer.html">
+                <h2 class="card">Summer</h2></a>
+                <div class="sun icon" alt="sun icon">☀️</div>
+            </div>
+            <div class="winter post">
+                <a href="winter.html">
+                <h2 class="card">Winter</h2></a>
+                <div class="snowflake icon" alt="snowflake icon">❄️</div>
+            </div>
+        </div>
+        <!-- subscribe button -->
+        <div class="subscribe-container">
+            <button type="button" class="subscribe" ><a href="#hidden">Subscribe</a></button>
+        </div>
+
+        <!-- subscribe form -->
+        <form action="" method="" class="sub-info-contain" id="hidden">
+            <!-- input used to send data that the form will be sent to -->
+            <!-- FUTURE TODO: will need to get help geeting a value for all the blank attribute to properly send info to my email -->
+            <input type="hidden" name="" value="morganh@outlook.com">
+            <!-- div to make grey out area around pop up -->
+            <div class="border-box">
+                <fieldset class="subscribe-info">
+                    <a href="#" class="closes"></a>
+                    <p class="info">Input Info To Apply</p>
+                    <!-- the name of the id will connect it to the for attribute -->
+                    <label for="name">Name</label> 
+                        <input type="text" name="name" id="name">
+                    <label for="email">Email: </label> 
+                        <input type="email" name="email" id="email">
+
+                    <!-- checkbox options -->
+                    <p class="checks">Check all that apply:</p>
+                    <!-- TODO: how to put words beside the checkbox -->
+                    <label for="notifications">
+                        <input type="checkbox" value="subscribe" name="subscribe" id="subscribe"> Subscribe to email notifications
+                    </label>
+                    <label for="hikes">
+                        <input type="checkbox" value="hikes" name="hikes" id="hikes"> Updates about hikes
+                    </label>
+                    <label for="resorts">
+                        <input type="checkbox" value="resorts" name="resorts" id="resorts"> Updates about Resorts
+                    </label>
+                    <label for="fun">
+                        <input type="checkbox" value="fun" name="options" id="fun" checked> Do you love kittens/puppies
+                    </label>
+                    <button class="submit-button" type="submit"><a href="">Submit</a></button>
+                </fieldset>
+            </div>
+        </form>
+
+        <!-- FUTURE TODO: need to make SVG for back button -->
+        <!-- FUTURE TODO: for when page is longer-->
+        <div class="back-button-container">
+            <button href="" type="button" class="back"></button>
+        </div>
+        <!-- footer -->
+        <footer>
+            <ul class="social-list">
+                <li class="social" ><a href="www.Facebook.com">Facebook</a></li>
+                <li class="social"><a href="www.Twitter.com">Twitter</a></li>
+                <li class="social"><a href="www.linkedin.com">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
